@@ -2,11 +2,18 @@ This project demonstrates the integration of a MongoDB database into a container
 
 
 Technologies Used:
+
+
 Node.js
+
 MongoDB
+
 Docker
+
 Kubernetes
+
 kubectl
+
 Postman (for testing)
 
 
