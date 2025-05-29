@@ -5,15 +5,10 @@ Technologies Used:
 
 
 Node.js
-
 MongoDB
-
 Docker
-
 Kubernetes
-
 kubectl
-
 Postman (for testing)
 
 
