@@ -1,6 +1,6 @@
 This project demonstrates the integration of a MongoDB database into a containerized Node.js microservice, deployed using Kubernetes. The app supports full CRUD operations and connects to MongoDB using Kubernetes secrets, persistent volumes, and services.
 
-Technologies Used:
+**Technologies Used:**
 
 
 -Node.js
@@ -16,7 +16,7 @@ Technologies Used:
 -Postman (for testing)
 
 
-How to Deploy:
+**How to Deploy:**
 
 -kubectl apply -f kubernetes/mongo-secret.yaml
 
@@ -29,12 +29,9 @@ How to Deploy:
 -kubectl apply -f kubernetes/app-deployment.yaml
 
 
-Then forward the port:
+**Then forward the port:** kubectl port-forward service/simple-node-app-service 3000:3000
 
-
-kubectl port-forward service/simple-node-app-service 3000:3000
-
-Code Overview:
+**Code Overview:**
 
 Using Kubernetes to orchestrate the development of a containerised Node.js microservice application linked with a MongoDB database is the challenge at hand. With the help of API endpoints, the Express.js-built application may execute all CRUD (Create, Read, Update, Delete) activities. An Express server is configured to process JSON requests and route them appropriately in the server.js file, which contains the primary application logic. The database is connected via a Kubernetes-managed service (mongodb-service), and the MongoDB client is initialised using credentials safely stored in Kubernetes Secrets. Within the database, the information is kept in a MongoDB collection called entries.
 
